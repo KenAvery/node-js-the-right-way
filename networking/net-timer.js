@@ -15,7 +15,7 @@ const
     console.log('Time subscriber connected');
     
     let timer = setInterval(function(){
-      connection.write('Current date and time: ' + Date.now() + '\n');
+      connection.write('Current date and time: ' + Date.now() + '\r\n');
     }, 1000);
     
     connection.on('end', function() {
